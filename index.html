@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2967A7">
+  <meta name="description" content="Sitio oficial de Moments of Peace. Contacto por WhatsApp, teléfono y Facebook.">
+  <title>Moments of Peace</title>
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+  <link rel="preload" href="img/logo.svg" as="image" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="is-loading">
+  <div class="preloader" aria-label="Cargando sitio" aria-live="polite">
+    <div class="preloader-card">
+      <div class="skeleton skeleton-logo"></div>
+      <div class="skeleton skeleton-title"></div>
+      <div class="skeleton skeleton-text"></div>
+      <div class="skeleton skeleton-text short"></div>
+      <div class="skeleton skeleton-actions"></div>
+    </div>
+  </div>
+
+  <header class="site-header" id="inicio">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Moments of Peace, inicio">
+        <img src="img/logo.svg" alt="Logotipo de Moments of Peace" width="76" height="76">
+        <span>Moments of Peace</span>
+      </a>
+
+      <button class="nav-toggle interactive" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <a class="nav-link" href="#inicio">Inicio</a>
+        <a class="nav-link" href="#contacto">Contacto</a>
+        <a class="nav-link" href="404.html">Ubicación</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-blob blob-one" aria-hidden="true"></div>
+      <div class="hero-blob blob-two" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">BIENVENIDO</span>
+          <h1>Un espacio digital con la esencia de <span>Moments of Peace</span>.</h1>
+          <p>Estamos preparando una experiencia clara, cercana y profesional. Mientras tanto, puedes comunicarte con nosotros por cualquiera de nuestros canales oficiales.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary interactive" href="https://wa.me/529993925467" target="_blank" rel="noopener noreferrer">
+              <img src="img/whatsapp.svg" alt="" aria-hidden="true"> WhatsApp
+            </a>
+            <a class="btn btn-secondary interactive" href="tel:+529993925467">
+              <span class="icon-mask phone-icon" aria-hidden="true"></span> Llamar ahora
+            </a>
+          </div>
+          <div class="trust-line"><span></span> Atención directa por canales oficiales</div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Identidad visual Moments of Peace">
+          <div class="logo-stage">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="brand-card">
+              <img src="img/logo.svg" alt="Moments of Peace" width="500" height="500">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">CONTACTO</span>
+          <h2>Estamos a un toque de distancia.</h2>
+          <p>Elige el canal que te resulte más cómodo.</p>
+        </div>
+
+        <div class="contact-grid">
+          <a class="contact-card interactive reveal" href="https://wa.me/529993925467" target="_blank" rel="noopener noreferrer">
+            <span class="card-icon social-icon"><img src="img/whatsapp.svg" alt="Logo de WhatsApp"></span>
+            <span class="card-content"><strong>WhatsApp</strong><small>999 392 5467</small></span>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="contact-card interactive reveal" href="tel:+529993925467">
+            <span class="card-icon color-icon"><span class="icon-mask phone-icon" aria-hidden="true"></span></span>
+            <span class="card-content"><strong>Teléfono</strong><small>999 392 5467</small></span>
+            <span class="card-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="contact-card interactive reveal" href="https://www.facebook.com/profile.php?id=100088048433441&amp;locale=es_LA" target="_blank" rel="noopener noreferrer">
+            <span class="card-icon social-icon"><img src="img/facebook.svg" alt="Logo de Facebook"></span>
+            <span class="card-content"><strong>Facebook</strong><small>Página oficial</small></span>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a class="contact-card interactive reveal is-coming" href="404.html" aria-label="Ubicación, próximamente">
+            <span class="card-icon color-icon"><span class="icon-mask location-icon" aria-hidden="true"></span></span>
+            <span class="card-content"><strong>Ubicación</strong><small>Próximamente</small></span>
+            <span class="status-pill">En desarrollo</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-brand">
+        <img src="img/logo.svg" alt="" aria-hidden="true" width="46" height="46">
+        <div><strong>Moments of Peace</strong><small>© <span id="year"></span> Todos los derechos reservados.</small></div>
+      </div>
+      <a href="#inicio" class="back-top interactive" aria-label="Volver al inicio">↑</a>
+    </div>
+  </footer>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+</body>
+</html>
