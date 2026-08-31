@@ -66,3 +66,6 @@ Después del `push`:
 - Facebook: página oficial proporcionada
 - Ubicación: temporalmente dirige a `404.html`
 - Precarga skeleton: ~1.35 segundos
+
+## Actualizacion visual responsive
+La seccion principal fue refinada para evitar que el logotipo domine la pantalla en dispositivos pequenos. En celulares, el logotipo se mantiene en el encabezado y se elimina la repeticion decorativa del hero. En tablet y escritorio se utiliza una presentacion editorial sobria, sin orbitas ni animaciones flotantes.
