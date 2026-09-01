@@ -2,62 +2,84 @@
 
 Landing page responsive creada con HTML, CSS y JavaScript puro.
 
-## Estructura
+## Estructura principal
 
 ```text
 moments-of-peace-web/
 ├─ index.html
 ├─ 404.html
 ├─ styles.css
+├─ carousel.css
 ├─ script.js
+├─ carousel.js
+├─ carrusel-preview.html
 ├─ README.md
 └─ img/
    ├─ logo.svg
    ├─ whatsapp.svg
    ├─ facebook.svg
    ├─ phone.svg
-   └─ location.svg
+   ├─ location.svg
+   ├─ masaje-terapeutico-01.jpg
+   ├─ masaje-terapeutico-02.jpg
+   └─ masaje-terapeutico-03.jpg
 ```
 
-## Abrir en Visual Studio Code
+## Carrusel fotográfico
 
-1. Abre Visual Studio Code.
-2. Ve a **File > Open Folder** y selecciona `moments-of-peace-web`.
-3. Abre `index.html`.
-4. Recomendado: instala la extensión **Live Server** y usa **Open with Live Server**.
+El carrusel está preparado para fotografías verticales y también tolera fotografías con otras proporciones sin deformarlas.
 
-También puedes abrirlo sin extensiones ejecutando desde la terminal:
+La regla principal es:
+
+```css
+object-fit: contain;
+```
+
+Esto hace que la fotografía completa permanezca visible. El espacio sobrante del marco se rellena visualmente con una versión desenfocada de la misma imagen, sin modificar el archivo original ni estirar sus píxeles.
+
+El carrusel incluye:
+
+- Flechas en computadora.
+- Swipe/deslizamiento en celular y tablet.
+- Teclas izquierda/derecha en computadora.
+- Autoplay suave.
+- Indicadores y contador.
+- Miniaturas.
+- Respeto a `prefers-reduced-motion`.
+- Tres fotografías reales almacenadas directamente en `img/`.
+
+## Vista previa en Visual Studio Code
+
+Abre la carpeta del proyecto en Visual Studio Code y ejecuta `index.html` con **Live Server**.
+
+Para revisar únicamente el carrusel puedes abrir:
+
+```text
+carrusel-preview.html
+```
+
+También puedes levantar un servidor local desde la terminal:
 
 ```bash
 python -m http.server 5500
 ```
 
-Luego abre `http://localhost:5500`.
+Luego visita `http://localhost:5500`.
 
-## Configurar Git y GitHub
+## Actualizar el repositorio de GitHub existente
 
-Desde la terminal integrada de VS Code, dentro de esta carpeta:
+Como el sitio ya está publicado, no necesitas volver a ejecutar `git init` ni volver a configurar `origin`.
+
+Después de reemplazar los archivos del proyecto por esta versión:
 
 ```bash
-git init
+git status
 git add .
-git commit -m "Primera version del sitio Moments of Peace"
-git branch -M main
-git remote add origin https://github.com/TU_USUARIO/moments-of-peace.git
-git push -u origin main
+git commit -m "Implementar carrusel fotografico responsive"
+git push origin main
 ```
 
-> Antes del `push`, crea en GitHub un repositorio vacío llamado `moments-of-peace` y sustituye `TU_USUARIO` por tu usuario real.
-
-## Publicar con GitHub Pages
-
-Después del `push`:
-
-1. En GitHub entra al repositorio.
-2. Ve a **Settings > Pages**.
-3. En **Build and deployment**, selecciona **Deploy from a branch**.
-4. Selecciona `main` y la carpeta `/ (root)`.
-5. Guarda los cambios.
+Si GitHub Pages está configurado desde la rama `main`, el sitio se actualizará automáticamente después del push.
 
 ## Datos configurados
 
@@ -66,6 +88,3 @@ Después del `push`:
 - Facebook: página oficial proporcionada
 - Ubicación: temporalmente dirige a `404.html`
 - Precarga skeleton: ~1.35 segundos
-
-## Actualizacion visual responsive
-La seccion principal fue refinada para evitar que el logotipo domine la pantalla en dispositivos pequenos. En celulares, el logotipo se mantiene en el encabezado y se elimina la repeticion decorativa del hero. En tablet y escritorio se utiliza una presentacion editorial sobria, sin orbitas ni animaciones flotantes.

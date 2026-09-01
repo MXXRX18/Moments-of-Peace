@@ -9,7 +9,9 @@
   <link rel="icon" type="image/svg+xml" href="img/logo.svg">
   <link rel="preload" href="img/logo.svg" as="image" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="carousel.css">
   <script src="script.js" defer></script>
+  <script src="carousel.js" defer></script>
 </head>
 <body class="is-loading">
   <div class="preloader" aria-label="Cargando sitio" aria-live="polite">
@@ -35,6 +37,7 @@
 
       <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
         <a class="nav-link" href="#inicio">Inicio</a>
+        <a class="nav-link" href="#galeria">Galería</a>
         <a class="nav-link" href="#contacto">Contacto</a>
         <a class="nav-link" href="404.html">Ubicación</a>
       </nav>
@@ -69,6 +72,68 @@
               <span>Moments of Peace</span>
               <small>Massage Therapy</small>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="galeria">
+      <div class="container">
+        <div class="gallery-heading reveal">
+          <div>
+            <span class="eyebrow">GALERÍA</span>
+            <h2>Momentos de bienestar, sin recortes ni distorsiones.</h2>
+          </div>
+          <p>Una galería fotográfica vertical pensada para mostrar cada imagen completa, respetando siempre su proporción original.</p>
+        </div>
+
+        <div class="spa-carousel reveal" data-carousel data-autoplay="5600" tabindex="0" aria-roledescription="carrusel" aria-label="Galería fotográfica de Moments of Peace">
+          <div class="carousel-stage">
+            <div class="carousel-viewport">
+              <div class="carousel-track" data-carousel-track>
+                <figure class="carousel-slide" data-carousel-slide>
+                  <div class="carousel-photo" style="--photo: url('img/masaje-terapeutico-01.jpg');">
+                    <img src="img/masaje-terapeutico-01.jpg" alt="Sesión de masaje terapéutico en Moments of Peace" draggable="false">
+                  </div>
+                </figure>
+
+                <figure class="carousel-slide" data-carousel-slide>
+                  <div class="carousel-photo" style="--photo: url('img/masaje-terapeutico-02.jpg');">
+                    <img src="img/masaje-terapeutico-02.jpg" alt="Sesión de masaje al aire libre en Moments of Peace" loading="lazy" draggable="false">
+                  </div>
+                </figure>
+
+                <figure class="carousel-slide" data-carousel-slide>
+                  <div class="carousel-photo" style="--photo: url('img/masaje-terapeutico-03.jpg');">
+                    <img src="img/masaje-terapeutico-03.jpg" alt="Sesión de masaje en un espacio de relajación de Moments of Peace" loading="lazy" draggable="false">
+                  </div>
+                </figure>
+              </div>
+            </div>
+
+            <button class="carousel-control prev interactive" type="button" data-carousel-prev aria-label="Fotografía anterior">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m14.5 5-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="carousel-control next interactive" type="button" data-carousel-next aria-label="Fotografía siguiente">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9.5 5 7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+
+          <div class="carousel-toolbar">
+            <div class="carousel-dots" data-carousel-dots aria-label="Seleccionar fotografía"></div>
+            <span class="carousel-status" data-carousel-status aria-live="off">01 / 03</span>
+          </div>
+
+          <div class="carousel-thumbs" aria-label="Miniaturas de la galería">
+            <button class="carousel-thumb is-active" type="button" data-carousel-thumb aria-label="Ver fotografía 1">
+              <span class="thumb-photo" style="--photo: url('img/masaje-terapeutico-01.jpg');"><img src="img/masaje-terapeutico-01.jpg" alt=""></span>
+            </button>
+            <button class="carousel-thumb" type="button" data-carousel-thumb aria-label="Ver fotografía 2">
+              <span class="thumb-photo" style="--photo: url('img/masaje-terapeutico-02.jpg');"><img src="img/masaje-terapeutico-02.jpg" alt=""></span>
+            </button>
+            <button class="carousel-thumb" type="button" data-carousel-thumb aria-label="Ver fotografía 3">
+              <span class="thumb-photo" style="--photo: url('img/masaje-terapeutico-03.jpg');"><img src="img/masaje-terapeutico-03.jpg" alt=""></span>
+            </button>
           </div>
         </div>
       </div>
