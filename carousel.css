@@ -10,9 +10,9 @@
 
 .gallery-heading {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 420px);
+  grid-template-columns: minmax(0, 1fr);
   align-items: end;
-  gap: 36px;
+  gap: 0;
   margin-bottom: 34px;
 }
 
