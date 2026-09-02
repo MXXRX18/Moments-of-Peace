@@ -88,3 +88,7 @@ Si GitHub Pages está configurado desde la rama `main`, el sitio se actualizará
 - Facebook: página oficial proporcionada
 - Ubicación: temporalmente dirige a `404.html`
 - Precarga skeleton: ~1.35 segundos
+
+## Actualizacion de logotipo
+
+El archivo `img/logo.svg` corresponde al logotipo corregido de Moments of Peace (MOMENTS). Todas las vistas del sitio lo reutilizan desde esta misma ruta.
